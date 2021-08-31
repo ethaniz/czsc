@@ -50,7 +50,8 @@ class KlineGenerator:
         """
         self.max_count = max_count
         if freqs is None:
-            self.freqs = ['月线', '周线', '日线', '60分钟', '30分钟', '15分钟', '5分钟', '1分钟']
+            #self.freqs = ['月线', '周线', '日线', '60分钟', '30分钟', '15分钟', '5分钟', '1分钟']
+            self.freqs = ['日线','30分钟','5分钟','1分钟']
         else:
             self.freqs = freqs
         self.m1: List[RawBar] = []

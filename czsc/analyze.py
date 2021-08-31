@@ -16,6 +16,7 @@ from .objects import BI, FakeBI, FX, RawBar, NewBar, Event
 from .utils.echarts_plot import kline_pro
 from .utils.ta import RSQ
 
+import pdb
 
 def create_fake_bis(fxs: List[FX]) -> List[FakeBI]:
     """创建 fake_bis 列表
@@ -409,6 +410,7 @@ class CzscTrader:
         self.symbol = self.kas["1分钟"].symbol
         self.end_dt = self.kas["1分钟"].bars_raw[-1].dt
         self.latest_price = self.kas["1分钟"].bars_raw[-1].close
+        pdb.set_trace()
         self.s = self._cal_signals()
 
         # cache 中会缓存一些实盘交易中需要的信息
