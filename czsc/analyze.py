@@ -345,6 +345,8 @@ class CZSC:
                     break
             self.bars_raw = self.bars_raw[s_index:]
 
+        #pdb.set_trace()
+
         if self.get_signals:
             self.signals = self.get_signals(c=self)
         else:
