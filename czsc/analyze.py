@@ -412,7 +412,7 @@ class CzscTrader:
         self.symbol = self.kas["1分钟"].symbol
         self.end_dt = self.kas["1分钟"].bars_raw[-1].dt
         self.latest_price = self.kas["1分钟"].bars_raw[-1].close
-        pdb.set_trace()
+        #pdb.set_trace()
         self.s = self._cal_signals()
 
         # cache 中会缓存一些实盘交易中需要的信息
